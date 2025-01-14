@@ -83,7 +83,7 @@ export const useAuthStore = defineStore("authStore", {
       const response  = await axios.post(servicePath, jsonBody, config)
       result = response
       data=result.data;
-      // console.log(data)
+      console.log(data)
       localStorage.setItem('token', data.token)
       this.user = data.user
       this.errors = {}
@@ -91,7 +91,7 @@ export const useAuthStore = defineStore("authStore", {
     } catch (error) {
       const myrrors = error.response.data.errors; 
       this.errors= myrrors;
-      // console.log(myrrors)
+      console.log(myrrors)
     }
     },
   },

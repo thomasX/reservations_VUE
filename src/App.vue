@@ -17,7 +17,6 @@ const authStore = useAuthStore()
             <button class="nav-link">Logout</button>
           </form>
         </div>
-
         <div v-else class="flex space-x-6">
           <RouterLink :to="{ name:'register' }" class="nav-link">Register</RouterLink>
           <RouterLink :to="{ name:'login' }" class="nav-link">Login</RouterLink>

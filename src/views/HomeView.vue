@@ -3,6 +3,6 @@
 
 <template>
   <main>
-    <h1 class="title">latest posts</h1>
+    <h1 class="title">latest posts oder sonst was ?</h1>
   </main>
 </template>
